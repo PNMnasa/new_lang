@@ -21,3 +21,10 @@ only push to main
 ```bash
 git push --set-upstream origin main
 ```
+
+## Logic
+```
+         -----                -----
+*.mas -> |Zig| -> LLVM IR -> |LLVM| -> .exe
+         -----                -----
+```
