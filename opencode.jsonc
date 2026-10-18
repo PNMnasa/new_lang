@@ -1,0 +1,25 @@
+{
+  // you need trust this urls in editor or ide
+  "$schema": "https://opencode.ai/config.json",
+  // Use this model by default.
+  "model": "anthropic/claude-sonnet-4-5",
+  // global config
+  // "update": "notify",
+  "default_agent": "build",
+
+  "permissions": [
+    // commmand line tools (powershell)
+    {
+      "action": "shell",
+      "resource": "*",
+      "effect": "ask",
+    },
+    { "action": "external_directory", "resource": "*", "effect": "deny" },
+    { "action": "read", "resource": "*", "effect": "allow" },
+  ],
+
+  "websearch": {
+    "provider": "random",
+  },
+  
+}
